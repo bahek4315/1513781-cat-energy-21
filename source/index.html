@@ -1,12 +1,166 @@
 <!DOCTYPE html>
-<html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Кэт энерджи</title>
-  </head>
-  <body>
-
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">HTML и CSS, уровень 2</a>».</p>
-
-  </body>
+<html class="page" lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Лучший котомазин!</title>
+</head>
+<body class="page__body">
+  <header class="page-header">
+    <p class="page-header__shop-name">
+      cat energy
+    </p>
+    <nav class="main-navigation">
+      <button class="main-navigation__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+      <div class="main-navigation__wrapper">
+        <ul class="main-navigation__list">
+          <li class="main-navigation__item main-navigation__item--active">
+            <a>главная</a>
+          </li>
+          <li class="main-navigation__item">
+            <a href="catalog.html">каталог продукции</a>
+          </li>
+          <li class="main-navigation__item">
+            <a href="#">подбор программы</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <main class="page-main">
+    <h1 class="visually-hidden">магазин "cat energy", с нами возможен любой тык-дык</h1>
+    <section class="introduction">
+      <div class="introduction__wrapper">
+        <h2 class="introduction__describtion">Функциональное<br>
+          питание для котов
+        </h2>
+        <p class="introduction_callout">
+          Занялся собой? Займись котом!
+        </p>
+        <a class="introduction__link" href="#">подобрать программу</a>
+      </div>
+    </section>
+    <section class="programs">
+      <div class="programs__wrapper">
+        <div class="programs__option">
+          <h3 class="programs__option-title">
+            похудение
+          </h3>
+          <p class="programs__option-describtion">
+            Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.
+          </p>
+          <a class="programs__option-link" href="#">
+            каталог slim
+          </a>
+        </div>
+        <div class="programs__option">
+          <h3 class="programs__option-title">
+            Набор массы
+          </h3>
+          <p class="programs__option-describtion">
+            Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!
+          </p>
+          <a class="programs__option-link" href="#">
+            каталог pro
+          </a>
+        </div>
+      </div>
+    </section>
+    <section class="principes">
+      <div class="principes__wrapper">
+        <h2 class="principes__title selector-title">
+          Как это работает
+        </h2>
+        <ul class="principes__list">
+          <li class="principes__item">
+            Функциональное питание<br>
+            содержит только полезные<br>
+            питательные вещества.
+          </li>
+          <li class="principes__item">
+            Выпускается в виде порошка,<br>
+            который нужно лишь залить<br>
+            кипятком и готово.
+          </li>
+          <li class="principes__item">
+            Замените один-два приема<br>
+            обычной еды на наше<br>
+            функциональное питание.
+          </li>
+          <li class="principes__item">
+          Уже через месяц наслаждайтесь<br>
+          изменениями к лучшему<br>
+          вашего питомца!
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="live-example">
+      <div class="live-example__wrapper">
+        <h2 class="live-example__title selector-title">
+          Живой пример
+        </h2>
+        <p class="live-example__story">
+          Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.
+        </p>
+        <div class="live-example__statistics">
+          <div class="live-example__data">
+            <strong class="live-example__data-bold">
+              5 КГ
+            </strong>
+            <p class="live-example__data-text">
+              снижение веса
+            </p>
+          </div>
+          <div class="live-example__data">
+            <strong class="live-example__data-bold">
+              60 ДНЕЙ
+            </strong>
+            <p class="live-example__data-text">
+              затрачено времени
+            </p>
+          </div>
+        </div>
+        <p class="live-example__result">
+          Затраты на питание: 15 000 РУБ.
+        </p>
+        <p class="live-example__pictures">
+          было<button class="live-example__switcher">Тут переключалка</button>стало
+        </p>
+      </div>
+    </section>
+  </main>
+  <footer class="page-footer">
+    <div class="page-footer__wrapper">
+      <h2 class="page-footer__title">
+        приглашаем<br>
+        к сотрудничеству<br>
+        дилеров!
+      </h2>
+      <p class="page-footer__adress">
+        ул. Большая<br>
+        Конюшенная, д. 19/8<br>
+        Санкт-Петербург
+      </p>
+      <p class="page-footer__shop-name">
+        cat energy
+      </p>
+      <div class="page-footer__social social">
+        <ul class="social-list">
+          <li class="social__item">
+            <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">Мы в Вконтакте</a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy">Мы в Инстаграме</a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">Мы в Фейсбуке</a>
+          </li>
+        </ul>
+      </div>
+      <div class="page-footer__copyright copyright">
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+      </div>
+    </div>
+  </footer>
+</body>
 </html>
