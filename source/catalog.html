@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <title>Каталог лучшего котомазина!</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body class="page-body">
   <header class="page-header">
@@ -13,21 +14,21 @@
       <button class="main-navigation__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
       <div class="main-navigation__wrapper">
         <ul class="main-navigation__list">
+          <li class="main-navigation__item">
+            <a class="main-navigation__link" href="index.html">главная</a>
+          </li>
           <li class="main-navigation__item main-navigation__item--active">
-            <a>главная</a>
+            <a class="main-navigation__link" href="#">каталог продукции</a>
           </li>
           <li class="main-navigation__item">
-            <a href="catalog.html">каталог продукции</a>
-          </li>
-          <li class="main-navigation__item">
-            <a href="#">подбор программы</a>
+            <a class="main-navigation__link" href="#">подбор программы</a>
           </li>
         </ul>
       </div>
     </nav>
   </header>
-  <main class="page-main">
-    <h1 class="page-main__title">
+  <main class="page-catalog">
+    <h1 class="page-catalog__title">
       Каталог продукции
     </h1>
     <section class="food">
@@ -35,7 +36,7 @@
         Список еды
       </h2>
       <div class="food__wrapper">
-        <ul class="page-main__food food">
+        <ul class="food__list">
           <li class="food__item">
             <a class="food__link" href="#">
               <img alt="alt-name" class="food__image" src="https://via.placeholder.com/150x150">
@@ -400,7 +401,7 @@
         к сотрудничеству<br>
         дилеров!
       </h2>
-      <p class="page-footer__adress">
+      <p class="page-footer__address">
         ул. Большая<br>
         Конюшенная, д. 19/8<br>
         Санкт-Петербург
@@ -409,7 +410,7 @@
         cat energy
       </p>
       <div class="page-footer__social social">
-        <ul class="social-list">
+        <ul class="social__list">
           <li class="social__item">
             <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">Мы в Вконтакте</a>
           </li>
