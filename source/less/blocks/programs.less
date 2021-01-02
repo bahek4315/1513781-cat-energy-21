@@ -13,10 +13,22 @@
 
 .programs__list {
   list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+
+  @media (min-width: 1440px) {
+    flex-direction: row;
+  }
 }
 
 .programs__option {
   background-color: @grey;
+  @media (min-width: 1440px) {
+    height: 374px;
+    width: 570px;
+    justify-content: space-between;
+  }
 }
 
 .programs__title {
