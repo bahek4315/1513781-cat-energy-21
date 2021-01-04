@@ -6,6 +6,18 @@
   font-size: 20px;
   line-height: 20px;
   text-transform: uppercase;
+  width: 280px;
+  padding: 0 20px;
+
+  @media (min-width: 768px) {
+    width: 708px;
+    padding: 0 30px;
+  }
+
+  @media (min-width: 1440px) {
+    width: 1220px;
+    padding: 0 110px;
+  }
 }
 
 .main-navigation__toggle {
@@ -17,7 +29,13 @@
 }
 
 .main-navigation__list {
+  display: flex;
   list-style-type: none;
+  flex-direction: column;
+
+  @media (min-width: 768px) {
+    flex-direction: row;
+  }
 }
 
 .main-navigation__item {
