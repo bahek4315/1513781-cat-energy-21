@@ -1,6 +1,6 @@
 .page-footer {
   /*future config*/
-  width: 280px;
+  width: auto;
   padding: 0 20px;
 
   @media (min-width: 768px) {
@@ -37,6 +37,23 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 20px;
+}
+
+.page-footer__upper-wrap {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.page-footer__bottom-wrap {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: 768px) {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
 }
 
 .page-footer__shop-name {
