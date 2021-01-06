@@ -14,10 +14,34 @@
 
 .additional__list {
   list-style-type: none;
+  display: grid;
+  grid-template-columns: 1fr;
+
+  @media (min-width: 768px) {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  @media (min-width: 1440px) {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
 }
 
 .additional__item {
   /*future config*/
+}
+
+.additional__item:nth-child(5) {
+  @media (min-width: 1440px) {
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+}
+
+.additional__item:nth-child(6) {
+  @media (min-width: 1440px) {
+    grid-column-start: 3;
+    grid-column-end: 5;
+  }
 }
 
 .additional__input {
