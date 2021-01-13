@@ -1,5 +1,15 @@
 .copyright {
-  /*future config*/
+  position: relative;
+  margin-right: 30px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  align-self: flex-start;
+  width: 281px;
+
+  @media (min-width: 768px) {
+    margin-right: 22px;
+    margin-top: 26px;
+  }
 }
 
 .copyright__link {
@@ -9,4 +19,21 @@
   font-size: 16px;
   line-height: 18px;
   text-decoration: none;
+  position: relative;
+}
+
+.copyright::after {
+  content: "";
+  position: absolute;
+  background-image: url("../img/html-academy-logo.svg");
+  z-index: 3;
+  display: block;
+  width: 27px;
+  height: 34px;
+  top: -7px;
+  right: 0;
+
+  @media (min-width: 768px) {
+    right: -8px;
+  }
 }

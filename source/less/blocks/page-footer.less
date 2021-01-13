@@ -1,16 +1,14 @@
 .page-footer {
   /*future config*/
-  width: auto;
-  padding: 0 20px;
+  min-width: 320px;
+  margin: 0 auto;
 
   @media (min-width: 768px) {
-    width: 708px;
-    padding: 0 30px;
+    min-width: 708px;
   }
 
   @media (min-width: 1440px) {
-    width: 1220px;
-    padding: 0 110px;
+    min-width: 1220px;
   }
 }
 
@@ -27,8 +25,13 @@
   font-weight: 400;
   font-family: "Oswald", "Arial", sans-serif;
   font-size: 16px;
-  line-height: 18px;
+  line-height: 20px;
   text-transform: uppercase;
+
+  @media (min-width: 768px) {
+    font-size: 20px;
+    line-height: 24px;
+  }
 }
 
 .page-footer__address {
@@ -37,27 +40,77 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 20px;
+  margin-right: 5px;
+
+  @media (min-width: 768px) {
+    display: inline;
+    font-size: 16px;
+    text-align: right;
+    margin-right: 37px;
+    margin-top: 12px;
+    margin-bottom: 47px;
+  }
+}
+
+.page-footer__address--br {
+  display: none;
+
+  @media (min-width: 768px) {
+    display: inline;
+  }
 }
 
 .page-footer__upper-wrap {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  margin: 0 19px;
+  margin-bottom: 11px;
+  margin-top: 14px;
+
+  @media (min-width: 768px) {
+    margin-left: 71px;
+    margin-top: 51px;
+  }
+}
+
+.page-footer__map {
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+  height: 369px;
+  border: none;
+
+  @media (min-width: 768px) {
+    height: 400px;
+  }
 }
 
 .page-footer__bottom-wrap {
+  padding-top: 32px;
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: @grey;
 
   @media (min-width: 768px) {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    padding-top: 35px;
+  }
+}
+
+.page-footer__shop-name-wrapper {
+  @media (min-width: 768px) {
+    margin-left: 30px;
   }
 }
 
 .page-footer__shop-name {
-  /*future config*/
+  @media (min-width: 768px) {
+  }
 }
 
 .page-footer__social {

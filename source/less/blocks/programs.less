@@ -8,7 +8,13 @@
 }
 
 .programs__wrapper {
-  /*future config*/
+  padding: 0 20px;
+  margin-top: 24px;
+
+  @media (min-width: 768px) {
+    padding: 0 30px;
+    margin-top: -160px;
+  }
 }
 
 .programs__list {
@@ -24,12 +30,21 @@
 
 .programs__option {
   background-color: @grey;
+  margin-bottom: 20px;
+
+  @media (min-width: 768px) {
+    margin-bottom: 30px;
+  }
 
   @media (min-width: 1440px) {
     height: 374px;
     width: 570px;
     justify-content: space-between;
   }
+}
+
+.programs__option:last-child {
+  margin-bottom: 0;
 }
 
 .programs__title {
@@ -39,17 +54,128 @@
   font-size: 24px;
   line-height: 37px;
   text-transform: uppercase;
+  margin-top: 30px;
+  margin-bottom: 29px;
+  margin-left: 91px;
+  position: relative;
+
+  @media (min-width: 768px) {
+    font-size: 36px;
+    line-height: 36px;
+    margin-top: 79px;
+    margin-left: 53px;
+    margin-bottom: 24px;
+  }
+}
+
+.programs__title-slim::before {
+  content: "";
+  position: absolute;
+  background-image: url("../img/slim-program-mobile.png");
+  z-index: 2;
+  display: block;
+  width: 50px;
+  height: 53px;
+  top: -10px;
+  left: -69px;
+
+  @media (min-width: 768px) {
+    width: 200px;
+    height: 211px;
+    background-image: url("../img/slim-program-tablet.png");
+    top: 4px;
+    left: 393px;
+  }
+}
+
+.programs__title-mass::before {
+  content: "";
+  position: absolute;
+  background-image: url("../img/mass-program-mobile.png");
+  z-index: 2;
+  display: block;
+  width: 67px;
+  height: 50px;
+  top: -7px;
+  left: -78px;
+
+  @media (min-width: 768px) {
+    background-image: url("../img/mass-program-tablet.png");
+    width: 268px;
+    height: 200px;
+    top: 12px;
+    left: 359px;
+  }
 }
 
 .programs__describtion {
-  /*future config*/
+  margin: 0 20px;
+  position: relative;
+
+  @media (min-width: 768px) {
+    font-size: 16px;
+    line-height: 24px;
+    width: 380px;
+    margin-left: 52px;
+  }
+}
+
+.programs__describtion--less {
+  @media (min-width: 768px) {
+    width: 340px;
+  }
+}
+
+.programs__describtion::after {
+  content: "";
+  position: absolute;
+  z-index: 2;
+  background-color: @grey-split;
+  width: 240px;
+  height: 1px;
+  bottom: -25px;
+  left: 0;
+
+  @media (min-width: 768px) {
+    display: none;
+  }
 }
 
 .programs__link {
   text-decoration: none;
+  display: inline-block;
   color: @black;
   font-family: "Oswald", "Arial", sans-serif;
   font-size: 16px;
   line-height: 16px;
   text-transform: uppercase;
+  margin-top: 43px;
+  margin-left: 19px;
+  margin-bottom: 23px;
+  position: relative;
+
+  @media (min-width: 768px) {
+    font-size: 20px;
+    line-height: 30px;
+    margin-left: 52px;
+    margin-top: 52px;
+    margin-bottom: 57px;
+  }
+}
+
+.programs__link::after {
+  content: "";
+  position: absolute;
+  background-image: url("../img/icon-arrow.png");
+  z-index: 2;
+  display: block;
+  width: 24px;
+  height: 12px;
+  top: 2px;
+  left: 100px;
+
+  @media (min-width: 768px) {
+    top: 9px;
+    left: 132px;
+  }
 }
