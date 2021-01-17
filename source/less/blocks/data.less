@@ -1,7 +1,19 @@
 .data {
-  /*future config*/
   display: flex;
   flex-direction: column;
+  border: none;
+  margin: 0 20px;
+  padding: 0;
+  margin-top: 25px;
+  margin-bottom: 23px;
+
+  @media (min-width: 768px) {
+    margin-right: 67px;
+    margin-left: 71px;
+    padding: 0;
+    margin-top: 45px;
+    margin-bottom: 72px;
+  }
 }
 
 .data__name {
@@ -10,10 +22,39 @@
   font-size: 16px;
   line-height: 18px;
   text-transform: uppercase;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 14px;
+
+  @media (min-width: 768px) {
+    font-size: 20px;
+    line-height: 30px;
+    margin-bottom: 20px;
+  }
 }
 
 .data__name-field {
-  /*future config*/
+  color: @dark-grey;
+  font-family: "Oswald", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  height: 43px;
+  width: 100%;
+  border: @grey-rectangle 1px solid;
+  margin: 0;
+  padding: 0;
+  margin-left: 14px;
+  padding-left: 13px;
+
+  @media (min-width: 768px) {
+    height: 50px;
+    font-size: 20px;
+    line-height: 30px;
+    margin-left: 16px;
+    padding-left: 18px;
+  }
 }
 
 .data__weight {
@@ -22,10 +63,39 @@
   font-size: 16px;
   line-height: 18px;
   text-transform: uppercase;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 14px;
+
+  @media (min-width: 768px) {
+    font-size: 20px;
+    line-height: 30px;
+    margin-bottom: 20px;
+  }
 }
 
 .data__weight-field {
-  /*future config*/
+  color: @dark-grey;
+  font-family: "Oswald", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  height: 43px;
+  width: 100%;
+  border: @grey-rectangle 1px solid;
+  margin: 0;
+  padding: 0;
+  margin-left: 16px;
+  padding-left: 15px;
+
+  @media (min-width: 768px) {
+    height: 50px;
+    font-size: 20px;
+    line-height: 30px;
+    margin-left: 20px;
+    padding-left: 18px;
+  }
 }
 
 .data__age {
@@ -34,8 +104,35 @@
   font-size: 16px;
   line-height: 18px;
   text-transform: uppercase;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  @media (min-width: 768px) {
+    font-size: 20px;
+    line-height: 30px;
+  }
 }
 
 .data__age-field {
-  /*future config*/
+  color: @dark-grey;
+  font-family: "Oswald", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  height: 43px;
+  width: 100%;
+  border: @grey-rectangle 1px solid;
+  margin: 0;
+  padding: 0;
+  margin-left: 16px;
+  padding-left: 15px;
+
+  @media (min-width: 768px) {
+    height: 50px;
+    font-size: 20px;
+    line-height: 30px;
+    margin-left: 16px;
+    padding-left: 19px;
+  }
 }

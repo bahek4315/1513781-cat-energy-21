@@ -1,10 +1,10 @@
 .page-footer {
-  /*future config*/
   min-width: 320px;
   margin: 0 auto;
 
   @media (min-width: 768px) {
-    min-width: 708px;
+    min-width: 768px;
+    margin: 0 auto;
   }
 
   @media (min-width: 1440px) {
@@ -13,7 +13,7 @@
 }
 
 .page-footer__wrapper {
-  /*future config*/
+  position: relative;
 }
 
 .page-footer__wrapper--grey {
@@ -27,10 +27,18 @@
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
+  margin-top: 29px;
+  margin-left: 20px;
 
   @media (min-width: 768px) {
     font-size: 20px;
     line-height: 24px;
+    margin-top: 65px;
+    margin-left: 71px;
+  }
+
+  @media (min-width: 768px) {
+    margin-left: 76px;
   }
 }
 
@@ -40,15 +48,22 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 20px;
-  margin-right: 5px;
+  margin-top: 29px;
+  margin-right: 24px;
+  margin-bottom: 26px;
 
   @media (min-width: 768px) {
     display: inline;
     font-size: 16px;
     text-align: right;
-    margin-right: 37px;
-    margin-top: 12px;
-    margin-bottom: 47px;
+    margin-top: 63px;
+    margin-right: 72px;
+    margin-bottom: 58px;
+  }
+
+  @media (min-width: 768px) {
+    text-align: left;
+    margin-right: 89px;
   }
 }
 
@@ -64,14 +79,18 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  margin: 0 19px;
-  margin-bottom: 11px;
-  margin-top: 14px;
 
-  @media (min-width: 768px) {
-    margin-left: 71px;
-    margin-top: 51px;
+  @media (min-width: 1440px) {
+    position: absolute;
+    width: 570px;
+    background-color: @white;
+    top: 96px;
+    left: 110px;
   }
+}
+
+.page-footer__upper-wrap--grey {
+  background-color: @grey;
 }
 
 .page-footer__map {
@@ -88,6 +107,7 @@
 
 .page-footer__bottom-wrap {
   padding-top: 32px;
+  padding-bottom: 8px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -99,12 +119,19 @@
     justify-content: space-between;
     align-items: center;
     padding-top: 35px;
+    padding-bottom: 41px;
   }
 }
 
 .page-footer__shop-name-wrapper {
   @media (min-width: 768px) {
     margin-left: 30px;
+    padding-top: 4px;
+  }
+
+  @media (min-width: 1440px) {
+    margin-left: 110px;
+    padding-top: 8px;
   }
 }
 

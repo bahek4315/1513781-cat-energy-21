@@ -1,5 +1,12 @@
 .comment {
-  /*future config*/
+  border: none;
+  margin: 0 20px;
+  padding: 0;
+
+  @media (min-width: 768px) {
+    margin-left: 70px;
+    margin-right: 67px;
+  }
 }
 
 .comment__legend {
@@ -8,10 +15,37 @@
   font-family: "Oswald", "Arial", sans-serif;
   font-size: 24px;
   line-height: 26px;
-  text-transform: uppercase;
   text-decoration: none;
+  padding-top: 14px;
+  padding-left: 0;
+  padding-bottom: 38px;
+
+  @media (min-width: 768px) {
+    font-size: 36px;
+    line-height: 36px;
+    padding-top: 52px;
+    padding-bottom: 76px;
+  }
 }
 
 .comment__text {
-  /*future config*/
+  border: @grey-rectangle 1px solid;
+  color: @dark-grey;
+  font-family: "Oswald", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 18px;
+  width: 262px;
+  height: 138px;
+  text-transform: uppercase;
+  padding-left: 14px;
+  padding-top: 8px;
+
+  @media (min-width: 768px) {
+    font-size: 20px;
+    line-height: 30px;
+    padding-left: 18px;
+    padding-top: 9px;
+    height: 162px;
+    width: 609px;
+  }
 }

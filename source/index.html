@@ -13,10 +13,10 @@
         <ul class="main-navigation__list">
           <li class="main-navigation__item">
             <a class="main-navigation__logo" href="#">
-              <img class="main-navigation__logo--mobile" src="img/logo-mobile.png" width="33" height="37" alt="CAT ENERGY">
+              <img class="main-navigation__logo main-navigation__logo--mobile" src="img/logo-mobile.png" width="33" height="37" alt="CAT ENERGY">
               <img class="main-navigation__name" src="img/header-name-mobile.png" width="101" height="18" alt="CAT ENERGY">
-              <img class="main-navigation__logo--tablet" src="img/logo-tablet.png" width="174" height="52" alt="CAT ENERGY">
-              <img class="main-navigation__logo--desktop" src="img/logo-desktop.png" width="202" height="60" alt="CAT ENERGY">
+              <img class="main-navigation__logo main-navigation__logo--tablet" src="img/logo-tablet.png" width="174" height="52" alt="CAT ENERGY">
+              <img class="main-navigation__logo main-navigation__logo--desktop" src="img/logo-desktop.png" width="202" height="60" alt="CAT ENERGY">
             </a>
             <button class="main-navigation__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
           </li>
@@ -43,9 +43,9 @@
         <p class="introduction__callout">
           Занялся собой? Займись котом!
         </p>
-        <img class="introduction__pic--mobile" src="img/index-can-mobile.png" width="280" height="270" alt="Банка корма">
-        <img class="introduction__pic--tablet" src="img/index-can-tablet.png" width="709" height="609" alt="Банка корма">
-        <img class="introduction__pic--desktop" src="img/index-can-desktop.png" width="552" height="499" alt="Банка корма">
+        <img class="introduction__pic introduction__pic--mobile" src="img/index-can-mobile.png" width="280" height="270" alt="Банка корма">
+        <img class="introduction__pic introduction__pic--tablet" src="img/index-can-tablet.png" width="709" height="609" alt="Банка корма">
+        <img class="introduction__pic introduction__pic--desktop" src="img/index-can-desktop.png" width="552" height="499" alt="Банка корма">
         <a class="introduction__link" href="form.html">подобрать программу</a>
       </div>
     </section>
@@ -108,52 +108,56 @@
     </section>
     <section class="live-example">
       <div class="live-example__wrapper">
-        <h2 class="live-example__title">
-          Живой пример
-        </h2>
-        <p class="live-example__story">
-          Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по&#8209;прежнему&nbsp;спит по 16 часов в день.
-        </p>
-        <div class="live-example__statistics">
-          <div class="live-example__data">
-            <div class="live-example__data-bold">
-              5 КГ
+        <div class="live-example__wrapper-left">
+          <h2 class="live-example__title">
+            Живой пример
+          </h2>
+          <p class="live-example__story">
+            Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по&#8209;прежнему&nbsp;спит по 16 часов в день.
+          </p>
+          <div class="live-example__statistics">
+            <div class="live-example__data">
+              <div class="live-example__data-bold">
+                5 КГ
+              </div>
+              <p class="live-example__data-text live-example__data-text--left">
+                снижение
+                веса
+              </p>
             </div>
-            <p class="live-example__data-text live-example__data-text--left">
-              снижение
-              веса
-            </p>
+            <div class="live-example__data">
+              <div class="live-example__data-bold">
+                60 ДНЕЙ
+              </div>
+              <p class="live-example__data-text">
+                затрачено времени
+              </p>
+            </div>
           </div>
-          <div class="live-example__data">
-            <div class="live-example__data-bold">
-              60 ДНЕЙ
-            </div>
-            <p class="live-example__data-text">
-              затрачено времени
+          <div class="live-example__result">
+            <p class="live-example__costs">
+              Затраты на питание:
+            </p>
+            <p class="live-example__price">
+              15 000 РУБ.
             </p>
           </div>
         </div>
-        <div class="live-example__result">
-          <p class="live-example__costs">
-            Затраты на питание:
-          </p>
-          <p class="live-example__price">
-            15 000 РУБ.
-          </p>
-        </div>
-        <img class="live-example__cat-fat live-example__cat-fat--active" width="311" height="232" src="img/fat-cat-mobile.png" alt="cat-fat">
-        <img class="live-example__cat-slim" src="img/cat-skinny.png" alt="cat-slim">
-        <div class="live-example__changes">
-          <p class="live-example__pictures">
-            было
-          </p>
-          <div class="live-example__switcher">
-            <div class="live-example__switcher--green">
+        <div class="live-example__wrapper-right">
+          <img class="live-example__cat-fat live-example__cat-fat--active" width="311" height="232" src="img/fat-cat-mobile.png" alt="cat-fat">
+          <img class="live-example__cat-slim" src="img/cat-skinny.png" alt="cat-slim">
+          <div class="live-example__changes">
+            <p class="live-example__pictures">
+              было
+            </p>
+            <div class="live-example__switcher">
+              <div class="live-example__switcher-green">
+              </div>
             </div>
+            <p class="live-example__pictures">
+              стало
+            </p>
           </div>
-          <p class="live-example__pictures">
-            стало
-          </p>
         </div>
       </div>
     </section>
@@ -183,17 +187,17 @@
           <ul class="social__list">
             <li class="social__item">
               <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">
-                <img class="social__link--vkontakte-img" width="23" height="16" src="img/icon-vk-mobile.svg" alt="vk">
+                <img class="social__vkontakte-img" width="23" height="16" src="img/icon-vk-mobile.svg" alt="vk">
               </a>
             </li>
             <li class="social__item">
               <a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy">
-                <img class="social__link--instagram-img" width="16" height="16" src="img/icon-instagram-mobile.svg" alt="vk">
+                <img class="social__instagram-img" width="16" height="16" src="img/icon-instagram-mobile.svg" alt="vk">
               </a>
             </li>
             <li class="social__item">
               <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">
-                <img class="social__link--facebook-img" width="22" height="22" src="img/icon-facebook-mobile.svg" alt="vk">
+                <img class="social__facebook-img" width="22" height="22" src="img/icon-facebook-mobile.svg" alt="vk">
               </a>
             </li>
           </ul>

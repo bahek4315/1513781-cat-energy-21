@@ -2,6 +2,11 @@
   color: @white;
   font-family: "Oswald", "Arial", sans-serif;
   font-weight: 400;
+
+  @media (min-width: 1440px) {
+    background: linear-gradient(90deg, @white 50%, @green 50%);
+    padding-top: 88px;
+  }
 }
 
 .introduction__wrapper {
@@ -26,6 +31,11 @@
     margin-top: 26px;
     margin-left: 117px;
   }
+
+  @media (min-width: 1440px) {
+    margin-top: 107px;
+    margin-left: 189px;
+  }
 }
 
 .introduction__callout {
@@ -46,6 +56,11 @@
     margin-left: 118px;
     background-color: transparent;
     text-align: left;
+  }
+
+  @media (min-width: 1440px) {
+    margin-left: 189px;
+    padding-bottom: 291px;
   }
 }
 
@@ -78,6 +93,9 @@
 
   @media (min-width: 1440px) {
     display: block;
+    position: absolute;
+    top: -54px;
+    left: 558px;
   }
 }
 
@@ -104,5 +122,10 @@
     left: 111px;
     padding-top: 17px;
     padding-bottom: 17px;
+  }
+
+  @media (min-width: 1440px) {
+    top: 255px;
+    left: 190px;
   }
 }

@@ -1,11 +1,34 @@
 .contacts {
-  /*future config*/
+  border: none;
   display: flex;
   flex-direction: column;
+  padding: 0 20px;
+  margin: 0;
+  width: 100%;
+  box-sizing: border-box;
+  position: relative;
+
+
+  @media (min-width: 768px) {
+    margin-left: 69px;
+    margin-right: 65px;
+  }
 
   @media (min-width: 1440px) {
     flex-direction: row;
   }
+}
+
+.contacts::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 42px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: @green;
+  z-index: -1;
 }
 
 .contacts__legend {
@@ -14,8 +37,17 @@
   font-family: "Oswald", "Arial", sans-serif;
   font-size: 24px;
   line-height: 26px;
-  text-transform: uppercase;
   text-decoration: none;
+  margin-left: 0;
+  padding-left: 0;
+  padding-top: 28px;
+  position: relative;
+
+  @media (min-width: 768px) {
+    font-size: 36px;
+    line-height: 36px;
+    padding-top: 75px;
+  }
 }
 
 .contacts__mail {
@@ -24,10 +56,62 @@
   font-size: 16px;
   line-height: 18px;
   text-transform: uppercase;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 31px;
+  margin-bottom: 14px;
+  position: relative;
+
+  @media (min-width: 768px) {
+    font-size: 20px;
+    line-height: 30px;
+    margin-top: 74px;
+    margin-bottom: 21px;
+    padding-left: 2px;
+  }
 }
 
 .contacts__mail-field {
-  /*future config*/
+  color: @dark-grey;
+  font-family: "Oswald", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  height: 43px;
+  width: 100%;
+  border: @grey-rectangle 1px solid;
+  margin: 0;
+  padding: 0;
+  margin-left: 11px;
+  padding-left: 14px;
+  position: relative;
+  top: 3px;
+
+  @media (min-width: 768px) {
+    height: 50px;
+    font-size: 20px;
+    line-height: 30px;
+    margin-left: 18px;
+    padding-left: 21px;
+  }
+}
+
+.contacts__mail::after {
+  content: "";
+  position: absolute;
+  top: 18px;
+  right: 15px;
+  width: 20px;
+  height: 14px;
+  background-image: url("../img/icon-email.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+
+  @media (min-width: 768px) {
+    top: 20px;
+    left: 595px;
+  }
 }
 
 .contacts__telno {
@@ -36,8 +120,56 @@
   font-size: 16px;
   line-height: 18px;
   text-transform: uppercase;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 14px;
+  position: relative;
+
+  @media (min-width: 768px) {
+    font-size: 20px;
+    line-height: 30px;
+  }
 }
 
 .contacts__telno-field {
-  /*future config*/
+  color: @dark-grey;
+  font-family: "Oswald", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  height: 43px;
+  width: 100%;
+  border: @grey-rectangle 1px solid;
+  margin: 0;
+  padding: 0;
+  margin-left: 9px;
+  padding-left: 16px;
+  position: relative;
+  top: 3px;
+
+  @media (min-width: 768px) {
+    height: 50px;
+    font-size: 20px;
+    line-height: 30px;
+    margin-left: 15px;
+    padding-left: 20px;
+  }
+}
+
+.contacts__telno::after {
+  content: "";
+  position: absolute;
+  top: 15px;
+  right: 13px;
+  width: 20px;
+  height: 20px;
+  background-image: url("../img/icon-phone.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+
+  @media (min-width: 768px) {
+    top: 17px;
+    left: 596px;
+  }
 }
