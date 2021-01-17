@@ -10,12 +10,13 @@
 
 
   @media (min-width: 768px) {
-    margin-left: 69px;
-    margin-right: 65px;
+    padding-left: 69px;
+    padding-right: 65px;
   }
 
   @media (min-width: 1440px) {
     flex-direction: row;
+    padding: 0;
   }
 }
 
@@ -29,6 +30,23 @@
   height: 2px;
   background-color: @green;
   z-index: -1;
+
+  @media (min-width: 768px) {
+    top: 97px;
+  }
+
+  @media (min-width: 1440px) {
+    top: 91px;
+  }
+}
+
+.contacts__wrapper {
+  @media (min-width: 1440px) {
+    display: flex;
+    flex-direction: row;
+    width: 1440px;
+    margin: 0 auto;
+  }
 }
 
 .contacts__legend {
@@ -39,14 +57,27 @@
   line-height: 26px;
   text-decoration: none;
   margin-left: 0;
-  padding-left: 0;
-  padding-top: 28px;
+  padding-left: 20px;
+  padding-top: 26px;
+  margin-right: 60px;
   position: relative;
+  left: -20px;
 
   @media (min-width: 768px) {
     font-size: 36px;
     line-height: 36px;
+    margin: 0;
     padding-top: 75px;
+    padding-left: 39px;
+    left: -39px;
+    padding-right: 42px;
+  }
+
+  @media (min-width: 1440px) {
+    padding-top: 69px;
+    padding-left: 40px;
+    left: 70px;
+    padding-right: 40px;
   }
 }
 
@@ -69,6 +100,11 @@
     margin-top: 74px;
     margin-bottom: 21px;
     padding-left: 2px;
+  }
+
+  @media (min-width: 1440px) {
+    min-width: 570px;
+    padding-left: 112px;
   }
 }
 
@@ -110,7 +146,7 @@
 
   @media (min-width: 768px) {
     top: 20px;
-    left: 595px;
+    right: 19px;
   }
 }
 
@@ -129,6 +165,12 @@
   @media (min-width: 768px) {
     font-size: 20px;
     line-height: 30px;
+  }
+
+  @media (min-width: 1440px) {
+    min-width: 570px;
+    padding-top: 69px;
+    padding-left: 77px;
   }
 }
 
@@ -170,6 +212,11 @@
 
   @media (min-width: 768px) {
     top: 17px;
-    left: 596px;
+    right: 18px;
+  }
+
+  @media (min-width: 1440px) {
+    top: 91px;
+    right: 15px;
   }
 }

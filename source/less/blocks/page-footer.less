@@ -16,10 +16,6 @@
   position: relative;
 }
 
-.page-footer__wrapper--grey {
-  background-color: @grey;
-}
-
 .page-footer__title {
   color: @black-invite;
   font-weight: 400;
@@ -39,6 +35,18 @@
 
   @media (min-width: 768px) {
     margin-left: 76px;
+  }
+}
+
+.page-footer__title--grey {
+  @media (min-width: 768px) {
+    margin-top: 68px;
+    margin-left: 71px;
+  }
+
+  @media (min-width: 1440px) {
+    margin-top: 67px;
+    margin-left: 74px;
   }
 }
 
@@ -91,6 +99,10 @@
 
 .page-footer__upper-wrap--grey {
   background-color: @grey;
+
+  @media (min-width: 1440px) {
+    background: @white;
+  }
 }
 
 .page-footer__map {
