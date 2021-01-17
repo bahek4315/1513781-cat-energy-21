@@ -1,17 +1,41 @@
 .plan {
-  /*future config*/
+  margin: 0;
+  padding: 0;
+  border: none;
+  border-top: @grey-split 1px solid;
+  border-bottom: @grey-split 1px solid;
+
+  @media (min-width: 768px) {
+    border: @grey-rectangle 1px solid;
+    margin-right: 67px;
+    margin-left: 71px;
+  }
 }
 
 .plan__list {
   list-style-type: none;
+  padding-left: 65px;
+  padding-top: 13px;
+  margin: 0;
+  margin-top: 16px;
+
+  @media (min-width: 768px) {
+    padding-left: 87px;
+    padding-bottom: 8px;
+  }
 }
 
 .plan__item {
-  /*future config*/
+  margin-bottom: 23px;
+}
+
+.plan__item:last-child {
+  margin-bottom: 21px;
 }
 
 .plan__input {
-  /*future config*/
+  display: none;
+  cursor: pointer;
 }
 
 .plan__label {
@@ -22,4 +46,51 @@
   line-height: 18px;
   text-transform: uppercase;
   text-decoration: none;
+  position: relative;
+  cursor: pointer;
+
+  @media (min-width: 768px) {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+
+.plan__label::before {
+  content: "";
+  position: absolute;
+  top: -3px;
+  left: -46px;
+  width: 30px;
+  height: 30px;
+  background-image: url("../img/radio-off-mobile.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+
+  @media (min-width: 768px) {
+    background-image: url("../img/radio-off-tablet.svg");
+    width: 41px;
+    height: 40px;
+    top: -5px;
+    left: -61px;
+  }
+}
+
+.plan__input:checked + .plan__label::before {
+  content: "";
+  position: absolute;
+  top: -3px;
+  left: -46px;
+  width: 30px;
+  height: 30px;
+  background-image: url("../img/radio-on-mobile.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+
+  @media (min-width: 768px) {
+    background-image: url("../img/radio-on-tablet.svg");
+    width: 41px;
+    height: 40px;
+    top: -5px;
+    left: -61px;
+  }
 }

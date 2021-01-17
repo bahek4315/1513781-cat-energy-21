@@ -1,15 +1,18 @@
 .page-form {
-  width: 280px;
-  padding: 0 20px;
+  min-width: 320px;
+  width: 100%;
+  margin: 0 auto;
 
   @media (min-width: 768px) {
-    width: 708px;
-    padding: 0 30px;
+    min-width: 768px;
+    width: 100%;
+    margin: 0 auto;
   }
 
   @media (min-width: 1440px) {
-    width: 1220px;
-    padding: 0 110px;
+    min-width: 1440px;
+    width: 100%;
+    margin: 0 auto;
   }
 }
 
@@ -19,6 +22,17 @@
   font-family: "Oswald", "Arial", sans-serif;
   font-size: 36px;
   line-height: 36px;
+  margin-top: 26px;
+  margin-bottom: 38px;
+  margin-left: 20px;
+
+  @media (min-width: 768px) {
+    font-size: 60px;
+    line-height: 60px;
+    margin-left: 69px;
+    margin-top: 54px;
+    margin-bottom: 55px;
+  }
 }
 
 .page-form__describtion {
@@ -26,5 +40,12 @@
   font-family: "Oswald", "Arial", sans-serif;
   font-size: 14px;
   line-height: 18px;
+  margin-left: 20px;
   text-transform: uppercase;
+
+  @media (min-width: 768px) {
+    font-size: 20px;
+    line-height: 30px;
+    margin-left: 69px;
+  }
 }
