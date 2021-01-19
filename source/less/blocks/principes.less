@@ -5,6 +5,14 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 18px;
+
+  @media (min-width: 768px) {
+    border-bottom: @grey-line 1px solid;
+  }
+
+  @media (min-width: 1440px) {
+    border-bottom: none;
+  }
 }
 
 .principes__wrapper {
@@ -14,7 +22,6 @@
     padding: 0 30px;
     width: 768px;
     margin: 0 auto;
-    border-bottom: @grey-line 1px solid;
     box-sizing: border-box;
   }
 
