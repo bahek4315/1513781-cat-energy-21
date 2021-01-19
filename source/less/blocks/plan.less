@@ -10,6 +10,12 @@
     margin-right: 67px;
     margin-left: 71px;
   }
+
+  @media (min-width: 1440px) {
+    margin-top: 45px;
+    margin-left: 13px;
+    min-width: 570px;
+  }
 }
 
 .plan__list {
@@ -75,13 +81,13 @@
   }
 }
 
-.plan__input:checked + .plan__label::before {
+.plan__input:checked + .plan__label::after {
   content: "";
   position: absolute;
-  top: -3px;
-  left: -46px;
-  width: 30px;
-  height: 30px;
+  top: 5px;
+  left: -38px;
+  width: 14px;
+  height: 14px;
   background-image: url("../img/radio-on-mobile.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
@@ -90,7 +96,7 @@
     background-image: url("../img/radio-on-tablet.svg");
     width: 41px;
     height: 40px;
-    top: -5px;
-    left: -61px;
+    top: 6px;
+    left: -50px;
   }
 }
