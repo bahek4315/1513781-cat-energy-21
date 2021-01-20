@@ -11,6 +11,11 @@
 
 .introduction__wrapper {
   position: relative;
+
+  @media (min-width: 1440px) {
+    width: 1440px;
+    margin: 0 auto;
+  }
 }
 
 .introduction__describtion {
@@ -128,4 +133,13 @@
     top: 255px;
     left: 190px;
   }
+}
+
+
+.introduction__link:hover {
+  background-color: @green-hover;
+}
+
+.introduction__link:focus {
+  color: rgba(255, 255, 255, 30%);
 }

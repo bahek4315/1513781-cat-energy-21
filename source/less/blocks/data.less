@@ -53,6 +53,7 @@
   padding: 0;
   margin-left: 14px;
   padding-left: 13px;
+  outline: transparent 2px solid;
 
   @media (min-width: 768px) {
     height: 50px;
@@ -61,6 +62,25 @@
     margin-left: 16px;
     padding-left: 18px;
   }
+}
+
+.data__name-field:hover,
+.data__weight-field:hover,
+.data__age-field:hover, {
+  border-color: @grey-box;
+}
+
+.data__name-field:focus,
+.data__weight-field:focus,
+.data__age-field:focus, {
+  outline: @dark-grey 2px solid;
+  position: relative;
+  border-color: transparent;
+}
+
+.data__name-field:invalid,
+.data__weight-field:invalid {
+  outline: @red 2px solid;
 }
 
 .data__weight {
@@ -94,6 +114,7 @@
   padding: 0;
   margin-left: 16px;
   padding-left: 15px;
+  outline: transparent 2px solid;
 
   @media (min-width: 768px) {
     height: 50px;
@@ -133,6 +154,7 @@
   padding: 0;
   margin-left: 16px;
   padding-left: 15px;
+  outline: transparent 2px solid;
 
   @media (min-width: 768px) {
     height: 50px;
