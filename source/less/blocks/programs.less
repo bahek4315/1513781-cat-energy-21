@@ -87,7 +87,7 @@
 .programs__title-slim::before {
   content: "";
   position: absolute;
-  background-image: url("../img/slim-program-mobile.png");
+  background-image: url("../img/slim-program-mobile.svg");
   z-index: 2;
   display: block;
   width: 50px;
@@ -98,7 +98,7 @@
   @media (min-width: 768px) {
     width: 200px;
     height: 211px;
-    background-image: url("../img/slim-program-tablet.png");
+    background-image: url("../img/slim-program-tablet.svg");
     top: 4px;
     left: 393px;
   }
@@ -106,7 +106,7 @@
   @media (min-width: 1440px) {
     width: 100px;
     height: 106px;
-    background-image: url("../img/slim-program-desktop.png");
+    background-image: url("../img/slim-program-desktop.svg");
     top: -36px;
     left: -162px;
   }
@@ -115,7 +115,7 @@
 .programs__title-mass::before {
   content: "";
   position: absolute;
-  background-image: url("../img/mass-program-mobile.png");
+  background-image: url("../img/mass-program-mobile.svg");
   z-index: 2;
   display: block;
   width: 67px;
@@ -124,7 +124,7 @@
   left: -78px;
 
   @media (min-width: 768px) {
-    background-image: url("../img/mass-program-tablet.png");
+    background-image: url("../img/mass-program-tablet.svg");
     width: 268px;
     height: 200px;
     top: 12px;
@@ -132,7 +132,7 @@
   }
 
   @media (min-width: 1440px) {
-    background-image: url("../img/mass-program-desktop.png");
+    background-image: url("../img/mass-program-desktop.svg");
     width: 134px;
     height: 100px;
     top: -30px;
@@ -215,16 +215,67 @@
 .programs__link::after {
   content: "";
   position: absolute;
-  background-image: url("../img/icon-arrow.png");
   z-index: 2;
   display: block;
-  width: 24px;
-  height: 12px;
-  top: 2px;
+  width: 18px;
+  height: 2px;
+  top: 6px;
+  left: 102px;
+  background-color: @black;
+
+  @media (min-width: 768px) {
+    top: 14px;
+    left: 133px;
+  }
+
+  @media (min-width: 1440px) {
+    left: 135px;
+  }
+}
+
+.programs__link--arrow::after {
   left: 100px;
 
   @media (min-width: 768px) {
+    top: 12px;
+    left: 129px;
+  }
+
+  @media (min-width: 1440px) {
+    top: 13px;
+  }
+}
+
+.programs__link::before {
+  content: "";
+  position: absolute;
+  display: block;
+  top: 3px;
+  right: -38px;
+  width: 8px;
+  height: 8px;
+  background: linear-gradient(225deg, transparent 50%, @black 50%);
+  transform: rotate(-135deg);
+
+  @media (min-width: 768px) {
+    top: 11px;
+    left: 146px;
+  }
+
+  @media (min-width: 1440px) {
+    left: 148px;
+  }
+}
+
+.programs__link--arrow::before {
+  right: -39px;
+
+  @media (min-width: 768px) {
     top: 9px;
-    left: 132px;
+    left: 143px;
+  }
+
+  @media (min-width: 1440px) {
+    top: 10px;
   }
 }
