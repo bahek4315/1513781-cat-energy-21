@@ -13,7 +13,7 @@
   }
 
   @media (min-width: 1440px) {
-    margin-right: 96px;
+    margin-right: 97px;
     margin-top: 32px;
   }
 }
@@ -28,22 +28,22 @@
   position: relative;
 }
 
-.copyright::after {
-  content: "";
+.copyright__icon {
   position: absolute;
-  background-image: url("../img/html-academy-logo.svg");
-  z-index: 3;
-  display: block;
-  width: 27px;
-  height: 34px;
   top: -7px;
-  right: 0;
+  right: -169px;
+  fill: @fill;
 
   @media (min-width: 768px) {
-    right: -20px;
+    top: -5px;
+    right: -51px;
   }
+}
 
-  @media (min-width: 1440px) {
-    right: 14px;
-  }
+.copyright__link:hover svg {
+  fill: @green;
+}
+
+.copyright__link:focus {
+  opacity: 0.3;
 }

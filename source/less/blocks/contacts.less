@@ -133,21 +133,21 @@
   }
 }
 
-.contacts__mail::after {
-  content: "";
+.contacts__mail-icon {
   position: absolute;
-  top: 18px;
+  top: 20px;
   right: 15px;
-  width: 20px;
-  height: 14px;
-  background-image: url("../img/icon-email.svg");
-  background-repeat: no-repeat;
-  background-position: 0 0;
+  stroke: @black-special;
 
   @media (min-width: 768px) {
     top: 20px;
     right: 19px;
   }
+}
+
+.contacts__telno-field:disabled + .contacts__telno-icon,
+.contacts__mail-field:disabled + .contacts__mail-icon {
+  stroke: @green;
 }
 
 .contacts__telno {
@@ -199,19 +199,13 @@
   }
 }
 
-.contacts__telno::after {
-  content: "";
+.contacts__telno-icon {
   position: absolute;
-  top: 15px;
+  top: 17px;
   right: 13px;
-  width: 20px;
-  height: 20px;
-  background-image: url("../img/icon-phone.svg");
-  background-repeat: no-repeat;
-  background-position: 0 0;
+  stroke: @black-special;
 
   @media (min-width: 768px) {
-    top: 17px;
     right: 18px;
   }
 
@@ -219,4 +213,14 @@
     top: 91px;
     right: 15px;
   }
+}
+
+.contacts__mail-field:invalid,
+.contacts__telno-field:invalid {
+  outline: @red 2px solid;
+}
+
+.contacts__mail-field:invalid + .contacts__mail-icon,
+.contacts__telno-field:invalid + .contacts__telno-icon {
+  stroke: @red;
 }

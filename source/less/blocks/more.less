@@ -2,18 +2,24 @@
   padding: 0 20px;
   margin: 0;
   position: relative;
+  box-sizing: border-box;
 
   @media (min-width: 768px) {
     padding: 0 30px;
   }
 
   @media (min-width: 1440px) {
-    padding: 0 110px;
+    padding: 0;
   }
 }
 
 .more__wrapper {
-  /*FK*/
+  @media (min-width: 1440px) {
+    padding: 0 110px;
+    box-sizing: border-box;
+    margin: 0 auto;
+    width: 1440px;
+  }
 }
 
 .more::after {
@@ -64,7 +70,7 @@
     padding-left: 40px;
     padding-right: 35px;
     padding-bottom: 79px;
-    left: -40px;
+    left: 70px;
   }
 }
 
@@ -253,6 +259,15 @@
     width: 244px;
     margin-bottom: 0;
   }
+}
+
+
+.more__link:hover {
+  background-color: @green-hover;
+}
+
+.more__link:focus {
+  color: rgba(255, 255, 255, 30%);
 }
 
 .more__image {

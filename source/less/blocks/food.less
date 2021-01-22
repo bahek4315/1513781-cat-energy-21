@@ -1,5 +1,10 @@
 .food {
-  /*future config*/
+  box-sizing: border-box;
+  margin: 0 auto;
+
+  @media (min-width: 1440px) {
+    width: 1440px;
+  }
 }
 
 .food__wrapper {
@@ -356,4 +361,12 @@
     width: 168px;
     margin-top: 34px;
   }
+}
+
+.food__buy:hover {
+  background-color: @green-hover;
+}
+
+.food__buy:focus {
+  color: rgba(255, 255, 255, 30%);
 }
