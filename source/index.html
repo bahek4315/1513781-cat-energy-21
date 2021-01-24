@@ -10,7 +10,7 @@
   <header class="page-header">
     <nav class="main-navigation main-navigation--opened">
       <div class="main-navigation__wrapper">
-        <ul class="main-navigation__list">
+        <ul class="main-navigation__list"> <!--to close, add same class with  --closed"-->
           <li class="main-navigation__item">
             <a class="main-navigation__logo" href="#">
               <picture>
@@ -19,7 +19,7 @@
                 <img class="main-navigation__logo" src="img/logo-mobile.svg" width="101" height="18" alt="CAT ENERGY">
               </picture>
             </a>
-            <button class="main-navigation__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+            <button class="main-navigation__toggle main-navigation__toggle--closed" type="button"><span class="visually-hidden">Открыть меню</span></button> <!--to open, delete last class -->
           </li>
           <li class="main-navigation__item main-navigation__item--active">
             <a class="main-navigation__link main-navigation__link--active" href="#">главная</a>
@@ -149,7 +149,7 @@
         <div class="live-example__wrapper-right">
           <picture>
             <source media="(min-width: 768px)" srcset="img/fat-cat-desktop.png 1x, img/fat-cat-desktop@2x.png 2x">
-            <img class="live-example__cat-fat live-example__cat--active" width="311" height="232" src="img/fat-cat-mobile.png" srcset="img/fat-cat-mobile@2x.png 2x" alt="cat-fat">
+            <img class="live-example__cat-fat live-example__cat-fat--active" width="311" height="232" src="img/fat-cat-mobile.png" srcset="img/fat-cat-mobile@2x.png 2x" alt="cat-fat">
           </picture>
           <picture>
             <source media="(min-width: 768px)" srcset="img/skinny-cat-desktop.png 1x, img/skinny-cat-desktop@2x.png 2x">
