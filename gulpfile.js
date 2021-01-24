@@ -20,16 +20,17 @@ const styles = () => {
     .pipe(plumber())
     .pipe(sourcemap.init())
     .pipe(less())
+    .pipe(rename("style.css"))
+    .pipe(gulp.dest("build/css"))
     .pipe(postcss([
       autoprefixer(),
       csso()
     ]))
+    .pipe(rename("style.min.css"))
     .pipe(sourcemap.write("."))
-    .pipe(rename("styles.min.css"))
     .pipe(gulp.dest("build/css"))
     .pipe(sync.stream());
 }
-
 exports.styles = styles;
 
 //My images
@@ -130,9 +131,9 @@ const watcher = () => {
 const build = gulp.series(
   clean,
   gulp.parallel(
+    copy,
     styles,
     html,
-    copy,
     images
   )
 )
