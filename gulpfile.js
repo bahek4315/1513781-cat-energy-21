@@ -20,6 +20,7 @@ const styles = () => {
     .pipe(plumber())
     .pipe(sourcemap.init())
     .pipe(less())
+    .pipe(postcss([autoprefixer()]))
     .pipe(rename("style.css"))
     .pipe(gulp.dest("build/css"))
     .pipe(postcss([
