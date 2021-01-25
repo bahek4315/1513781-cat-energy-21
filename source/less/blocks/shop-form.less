@@ -9,6 +9,16 @@
   }
 }
 
+.shop-form__bottom {
+  @media (min-width: 1440px) {
+    display: block;
+    margin: 0 auto;
+    width: 1220px;
+    position: relative;
+    left: -110px;
+  }
+}
+
 .shop-form__submit {
   color: @white;
   background-color: @green;
@@ -21,11 +31,15 @@
   border: none;
   padding-top: 11px;
   padding-bottom: 10px;
+  margin-top: 14px;
 
   @media (min-width: 768px) {
     font-size: 20px;
     padding-top: 17px;
     padding-bottom: 15px;
+    width: 282px;
+    margin-top: 17px;
+    display: inline;
   }
 
   @media (min-width: 1440px) {
@@ -33,6 +47,7 @@
     padding-top: 17px;
     padding-bottom: 15px;
     width: 568px;
+    margin-left: 110px;
   }
 }
 
@@ -53,12 +68,21 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 16px;
-  margin-left: 16px;
+  margin-left: 62px;
   margin-top: 21px;
+  margin-bottom: 32px;
 
   @media (min-width: 768px) {
     font-size: 16px;
-    margin-left: 3px;
-    margin-top: 32px;
+    display: inline-block;
+    position: relative;
+    top: -7px;
+    left: -1px;
+    margin-bottom: 85px;
+  }
+
+  @media (min-width: 1440px) {
+    margin-bottom: 93px;
+    margin-left: 84px;
   }
 }

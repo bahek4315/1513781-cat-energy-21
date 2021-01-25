@@ -70,13 +70,19 @@
     padding-left: 40px;
     padding-right: 35px;
     padding-bottom: 79px;
-    left: 70px;
+    padding-top: 45px;
+    display: block;
+    margin: 0 auto;
+    width: 413px;
+    box-sizing: border-box;
+    left: -444px;
   }
 }
 
 .more__bonus {
   display: flex;
   flex-direction: column;
+  position: relative;
 
   @media (min-width: 1440px) {
     display: flex;
@@ -270,6 +276,23 @@
   color: rgba(255, 255, 255, 30%);
 }
 
+.more__sale {
+  display: block;
+  width: 280px;
+  margin: 0 auto;
+  position: relative;
+
+  @media (min-width: 768px) {
+    width: 708px;
+  }
+
+  @media (min-width: 1440px) {
+    width: 245px;
+    margin: 0;
+    padding: 0;
+  }
+}
+
 .more__image {
   display: block;
   margin: 0 auto;
@@ -287,28 +310,27 @@
   }
 }
 
-.more__image--mobile {
-  @media (min-width: 768px) {
-    display: none;
-  }
-}
+.more__sign {
+  color: @white;
+  font-family: "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  position: absolute;
+  bottom: 60px;
+  left: 58px;
 
-.more__image--tablet {
-  display: none;
-
   @media (min-width: 768px) {
-    display: block;
+    text-align: left;
+    bottom: 128px;
+    left: 423px;
   }
 
   @media (min-width: 1440px) {
-    display: none;
-  }
-}
-
-.more__image--desktop {
-  display: none;
-
-  @media (min-width: 1440px) {
-    display: block;
+    text-align: center;
+    bottom: 26px;
+    left: 121px;
+    width: 161px;
   }
 }

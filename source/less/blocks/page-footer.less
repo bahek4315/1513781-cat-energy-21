@@ -1,6 +1,7 @@
 .page-footer {
   min-width: 320px;
   margin: 0 auto;
+  background-color: @grey;
 
   @media (min-width: 768px) {
     min-width: 768px;
@@ -87,11 +88,11 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  background-color: @white;
 
   @media (min-width: 1440px) {
     position: absolute;
     width: 570px;
-    background-color: @white;
     top: 96px;
     left: 110px;
   }
@@ -132,6 +133,12 @@
     align-items: center;
     padding-top: 35px;
     padding-bottom: 41px;
+  }
+
+  @media (min-width: 1440px) {
+    width: 1440px;
+    position: relative;
+    margin: 0 auto;
   }
 }
 

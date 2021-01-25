@@ -6,7 +6,7 @@
   line-height: 18px;
 
   @media (min-width: 768px) {
-    background: linear-gradient(180deg, @white 56.6%, @background-grey 56.6%);
+    background: linear-gradient(180deg, @white 56.7%, @background-grey 56.7%);
   }
 
   @media (min-width: 1440px) {
@@ -290,16 +290,17 @@ h2.live-example__title {
   align-items: center;
   position: relative;
   justify-content: center;
+  padding-bottom: 16px;
 
   @media (min-width: 768px) {
     margin-top: 36px;
-    padding-bottom: 30px;
+    padding-bottom: 47px;
   }
 
   @media (min-width: 1440px) {
-    margin-top: 13px;
-    padding-bottom: 30px;
-    margin-left: 190px;
+    margin-top: 14px;
+    padding-bottom: 49px;
+    margin-left: 176px;
   }
 }
 
@@ -313,10 +314,19 @@ h2.live-example__title {
   margin-top: 33px;
   padding-bottom: 20px;
   position: relative;
+  border: none;
+  background-color: @background-grey;
+  outline: transparent;
 
   @media (min-width: 768px) {
     font-size: 20px;
     line-height: 30px;
+    margin-top: 31px;
+    padding-bottom: 22px;
+  }
+
+  @media (min-width: 1440px) {
+    background-color: @grey-background;
   }
 }
 
@@ -331,6 +341,7 @@ h2.live-example__title {
 
   @media (min-width: 768px) {
     border-bottom: rgba(0, 0, 0, 0.24) 1px dotted;
+    left: 6px;
   }
 }
 
@@ -348,12 +359,16 @@ h2.live-example__title {
   margin-left: 2px;
 
   @media (min-width: 768px) {
-    margin-left: -2px;
+    margin-left: 4px;
   }
 }
 
 .live-example__pictures:last-child {
-  margin-left: 9px;
+  margin-right: -2px;
+
+  @media (min-width: 768px) {
+    margin-right: 5px;
+  }
 }
 
 .live-example__switcher {
@@ -364,8 +379,8 @@ h2.live-example__title {
   border-radius: 5px;
   border: @grey-split 1px solid;
   position: relative;
-  top: -2px;
-  left: 4px;
+  top: 7px;
+  left: 2px;
   margin-left: 12px;
   margin-right: 13px;
 
@@ -396,7 +411,7 @@ h2.live-example__title {
     border: 1px @grey-box solid;
     border-radius: 50%;
     top: -15px;
-    left: 197px;
+    left: 194px;
     box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 16%);
   }
 }
